@@ -9,7 +9,11 @@
 */
 
 const nestedArr = (arr, number) => {
-    /* Тут код*/
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i].includes(number)){
+            return arr.indexOf(arr[i]);
+        }
+    }
 
 }
 
