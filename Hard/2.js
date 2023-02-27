@@ -11,8 +11,16 @@
 
 */
 
-const longestString = () => {
-    /* Тут код*/
+const longestString = (arr) => {
+    if (arr.length === 0) {
+        return null;
+    }
+
+    arr.sort(function (a, b) {
+        return b.length - a.length;
+    });
+
+    return arr[0];
 
 }
 
