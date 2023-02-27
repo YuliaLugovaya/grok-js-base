@@ -7,8 +7,10 @@
 Пример: 'web_development' => 'webDevelopment'
 */
 
-const camelCase = () => {
-    /* Тут код*/
+const camelCase = (str) => {
+    const indexSymbol = str.indexOf('_');
+    const upperLetter = str.charAt(indexSymbol + 1).toUpperCase();
+    return str.slice(0, indexSymbol) + upperLetter + str.slice(indexSymbol + 2, str.length);
 
 }
 
