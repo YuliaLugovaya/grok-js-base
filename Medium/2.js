@@ -7,7 +7,14 @@
 */
 
 const randomArr = () => {
-    /* Тут код*/
+    const min = 0;
+    const max = 10;
+    let arr = [];
+
+    for(let i = 0; i < 10; i++){
+      arr.push(Math.round(Math.random() * (max - min)) + min);
+    }
+    return arr;
 
 }
 

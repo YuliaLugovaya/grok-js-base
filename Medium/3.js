@@ -10,7 +10,24 @@
 */
 
 const sumOfIntegers = (start, end) => {
-    /* Тут код*/
+    let sum = 0;
+
+    if (start > end && start > 0 && end > 0) {
+        for (let i = start; i >= end; i--) {
+            sum += i;
+        }
+        return sum;
+    } else if (start < end && start > 0 && end > 0) {
+        for (let i = start; i <= end; i++) {
+            sum += i;
+        }
+        return sum;
+    } else if (start === end && start > 0 && end > 0) {
+        sum = start;
+        return sum;
+    } else {
+        return "Ошибка: отрицательное число"
+    }
 
 }
 
