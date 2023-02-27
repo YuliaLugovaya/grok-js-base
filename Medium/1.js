@@ -5,7 +5,10 @@
 */
 
 const logEachLetter = (str) => {
-    /* Тут код*/
+    let arr = str.split('');
+    return arr.forEach(function (el) {
+        console.log(el);
+    })
 
 }
 
